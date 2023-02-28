@@ -1,6 +1,7 @@
 import random
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 import time
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
@@ -47,18 +48,14 @@ def data_all_problems():
                 count += 1
                 continue
 
-            try:
-                is_prem = task.find_element(By.TAG_NAME, "path")
-                status_prem = "Yes"
-            except Exception:
-                status_prem = None
+            is_prem = True if task.find("svg", class_="ml-2 shrink-0") else False
 
             name = task.find(class_=['h-5']).text
             link = "https://leetcode.com" + task.find("a").get("href")
 
             data[str(count)] = {
                 "name": name,
-                "is_premium": status_prem,
+                "is_premium": is_prem,
                 "link": link,
             }
             count += 1
