@@ -8,20 +8,17 @@ def get_editorial_solution(soup):
     contents = tag_class.contents
     for content in contents:
         if content.name == "h4":
-            cur_h4 = content.text
-            data_solution[cur_h4] = dict()
+            cur_tag_h4 = content.text
+            data_solution[cur_tag_h4] = dict()
 
         if content.name == "p":
             if content.contents[0].name == "strong":
                 cur_strong = content.text
-                data_solution[cur_h4][cur_strong] = ""
+                data_solution[cur_tag_h4][cur_strong] = []
             else:
-                data_solution[cur_h4][cur_strong] += content.text
+                data_solution[cur_tag_h4][cur_strong].append(content.text)
 
-    print(data_solution)
-
-
-
+    return data_solution
 
 
 def get_data_editorial(url):
@@ -41,10 +38,12 @@ def get_data_editorial(url):
     else:
         tag_edit_solutions = soup.find("div", class_="flex w-full flex-col gap-4 px-5 pb-8 pt-0")
 
-        get_editorial_solution(tag_edit_solutions)
+        data_editorial["editorial solution"] = get_editorial_solution(tag_edit_solutions)
+
+    return data_editorial
 
 
 url1 = "https://leetcode.com/problems/triangle/"
 url2 = "https://leetcode.com/problems/text-justification/"
 url3 = "https://leetcode.com/problems/two-sum/"
-get_data_editorial(url3)
+print(get_data_editorial(url3))
