@@ -1,5 +1,48 @@
 from get_data_problems import get_html
 from bs4 import BeautifulSoup
+import json
+from selenium import webdriver
+from fake_useragent import UserAgent
+import time
+from selenium.webdriver.common.by import By
+
+
+def get_code(url):
+    data_code = dict()
+
+    useragent = UserAgent()
+
+    options_browser = webdriver.ChromeOptions()
+    options_browser.add_argument(f"user-agent={useragent.chrome}")
+
+    browser = webdriver.Chrome(
+        executable_path=f"C:/Users/ppp/chromedriver.exe",
+        options=options_browser
+    )
+
+    try:
+        browser.get(url=url)
+        page_html = browser.page_source
+        time.sleep(1)
+        element = browser.find_element(By.CLASS_NAME, "lang-btn-set")
+
+        buttons = element.find_elements(By.TAG_NAME, 'button')
+
+        for b in buttons:
+            b.click()
+            soup = BeautifulSoup(page_html, "lxml")
+            code = soup.find("textarea")
+            data_code[b.text] = code.string
+            time.sleep(2)
+
+        return data_code
+
+    except Exception as ex:
+        print(ex)
+
+    finally:
+        browser.close()
+        browser.quit()
 
 
 def get_editorial_solution(soup):
@@ -17,6 +60,10 @@ def get_editorial_solution(soup):
                 data_solution[cur_tag_h4][cur_strong] = []
             else:
                 data_solution[cur_tag_h4][cur_strong].append(content.text)
+
+        if content.name == "iframe":
+            url = content.get("src")
+            data_solution[cur_tag_h4]["Implementation"] = get_code(url)
 
     return data_solution
 
@@ -46,4 +93,8 @@ def get_data_editorial(url):
 url1 = "https://leetcode.com/problems/triangle/"
 url2 = "https://leetcode.com/problems/text-justification/"
 url3 = "https://leetcode.com/problems/two-sum/"
-print(get_data_editorial(url3))
+data = get_data_editorial(url3)
+print(json.dumps(data, indent=5))
+
+# cods = get_code("https://leetcode.com/playground/cvvgJGBX/shared")
+# print(cods)
