@@ -23,7 +23,7 @@ def get_code(url):
     try:
         browser.get(url=url)
         page_html = browser.page_source
-        time.sleep(1)
+        time.sleep(4)
         element = browser.find_element(By.CLASS_NAME, "lang-btn-set")
 
         buttons = element.find_elements(By.TAG_NAME, 'button')
@@ -33,7 +33,7 @@ def get_code(url):
             soup = BeautifulSoup(page_html, "lxml")
             code = soup.find("textarea")
             data_code[b.text] = code.string
-            time.sleep(2)
+            time.sleep(3)
 
         return data_code
 
@@ -90,11 +90,11 @@ def get_data_editorial(url):
     return data_editorial
 
 
-url1 = "https://leetcode.com/problems/triangle/"
-url2 = "https://leetcode.com/problems/text-justification/"
-url3 = "https://leetcode.com/problems/two-sum/"
-data = get_data_editorial(url3)
-print(json.dumps(data, indent=5))
+# url1 = "https://leetcode.com/problems/triangle/"
+# url2 = "https://leetcode.com/problems/text-justification/"
+# url3 = "https://leetcode.com/problems/two-sum/"
+# data = get_data_editorial(url3)
+# print(json.dumps(data, indent=5))
 
 # cods = get_code("https://leetcode.com/playground/cvvgJGBX/shared")
 # print(cods)
