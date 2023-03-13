@@ -38,6 +38,188 @@
                 },
                 "Complexity Analysis": []
             }
+        },
+        "solutions": {
+            "1": {
+                "name_sol": "Accepted Java O(n) Solution",
+                "link_sol": "/problems/two-sum/solutions/3/accepted-java-o-n-solution/",
+                "user_name": "jiaming2",
+                "date_sol": "Jul 26, 2014"
+            },
+            "2": {
+                "name_sol": "Python Simple Solution || O(n) Time || O(n) Space",
+                "link_sol": "/problems/two-sum/solutions/2361743/python-simple-solution-o-n-time-o-n-space/",
+                "user_name": "GeekErra",
+                "date_sol": "Jul 31, 2022"
+            },
+            "3": {
+                "name_sol": "Here is a Python solution in O(n) time",
+                "link_sol": "/problems/two-sum/solutions/17/here-is-a-python-solution-in-o-n-time/",
+                "user_name": "Nathan_Fegard",
+                "date_sol": "Aug 30, 2015"
+            },
+            "4": {
+                "name_sol": "Sum MegaPost - Python3 Solution with a detailed explanation",
+                "link_sol": "/problems/two-sum/solutions/737092/sum-megapost-python3-solution-with-a-detailed-explanation/",
+                "user_name": "peyman_np",
+                "date_sol": "Jul 14, 2020"
+            },
+            "5": {
+                "name_sol": "Accepted C++ O(n) Solution",
+                "link_sol": "/problems/two-sum/solutions/13/accepted-c-o-n-solution/",
+                "user_name": "naveedz",
+                "date_sol": "Sep 12, 2014"
+            },
+            "6": {
+                "name_sol": "\u2705Short || C++ || Java || PYTHON || JS || Explained Solution\u2714\ufe0f || Beginner Friendly ||\ud83d\udd25",
+                "link_sol": "/problems/two-sum/solutions/3070799/short-c-java-python-js-explained-solution-beginner-friendly/",
+                "user_name": "amoddeshmukh844",
+                "date_sol": "Jan 18, 2023"
+            },
+            "7": {
+                "name_sol": "Solution  - C++/Java/Python  (Both Brute force & Optimized Code)",
+                "link_sol": "/problems/two-sum/solutions/2990807/solution-c-java-python-both-brute-force-optimized-code/",
+                "user_name": "arajAnkit",
+                "date_sol": "Jan 02, 2023"
+            },
+            "8": {
+                "name_sol": "Java 100% runtime || Easy to Understand",
+                "link_sol": "/problems/two-sum/solutions/2671539/java-100-runtime-easy-to-understand/",
+                "user_name": "vishaal351",
+                "date_sol": "Oct 07, 2022"
+            },
+            "9": {
+                "name_sol": "C++ one-pass",
+                "link_sol": "/problems/two-sum/solutions/674/c-one-pass/",
+                "user_name": "jianchao-li",
+                "date_sol": "Jun 08, 2015"
+            },
+            "10": {
+                "name_sol": "[C++/Java/Python] HashMap, Two pointers Solutions - Clean & Concise",
+                "link_sol": "/problems/two-sum/solutions/1378064/c-java-python-hashmap-two-pointers-solutions-clean-concise/",
+                "user_name": "hiepit",
+                "date_sol": "Aug 02, 2021"
+            },
+            "11": {
+                "name_sol": "Easy C++ solution||Using Three Different Appraoches",
+                "link_sol": "/problems/two-sum/solutions/1374512/easy-c-solution-using-three-different-appraoches/",
+                "user_name": "anubhavbaner7",
+                "date_sol": "Jul 31, 2021"
+            },
+            "12": {
+                "name_sol": "JavaScript Solution",
+                "link_sol": "/problems/two-sum/solutions/173262/javascript-solution/",
+                "user_name": "jeantimex",
+                "date_sol": "Sep 22, 2018"
+            },
+            "13": {
+                "name_sol": "[Neat] JavaScript Map, O(n)",
+                "link_sol": "/problems/two-sum/solutions/234005/neat-javascript-map-o-n/",
+                "user_name": "haleyysz",
+                "date_sol": "Feb 08, 2019"
+            },
+            "14": {
+                "name_sol": "Very short and simple Java code for Two Sum",
+                "link_sol": "/problems/two-sum/solutions/141/very-short-and-simple-java-code-for-two-sum/",
+                "user_name": "oKephart",
+                "date_sol": "Dec 23, 2014"
+            },
+            "15": {
+                "name_sol": "[C/C++/Python] Various solutions. c++ is O(n) time and just 6 lines. C hashmap solution",
+                "link_sol": "/problems/two-sum/solutions/189807/c-c-python-various-solutions-c-is-o-n-time-and-just-6-lines-c-hashmap-solution/",
+                "user_name": "ChrisTrompf",
+                "date_sol": "Nov 04, 2018"
+            },
+            "16": {
+                "name_sol": "Accepted Java O(n) Solution",
+                "link_sol": "/problems/two-sum/solutions/3/accepted-java-o-n-solution/",
+                "user_name": "jiaming2",
+                "date_sol": "Jul 26, 2014"
+            },
+            "17": {
+                "name_sol": "Python Simple Solution || O(n) Time || O(n) Space",
+                "link_sol": "/problems/two-sum/solutions/2361743/python-simple-solution-o-n-time-o-n-space/",
+                "user_name": "GeekErra",
+                "date_sol": "Jul 31, 2022"
+            },
+            "18": {
+                "name_sol": "Here is a Python solution in O(n) time",
+                "link_sol": "/problems/two-sum/solutions/17/here-is-a-python-solution-in-o-n-time/",
+                "user_name": "Nathan_Fegard",
+                "date_sol": "Aug 30, 2015"
+            },
+            "19": {
+                "name_sol": "Sum MegaPost - Python3 Solution with a detailed explanation",
+                "link_sol": "/problems/two-sum/solutions/737092/sum-megapost-python3-solution-with-a-detailed-explanation/",
+                "user_name": "peyman_np",
+                "date_sol": "Jul 14, 2020"
+            },
+            "20": {
+                "name_sol": "Accepted C++ O(n) Solution",
+                "link_sol": "/problems/two-sum/solutions/13/accepted-c-o-n-solution/",
+                "user_name": "naveedz",
+                "date_sol": "Sep 12, 2014"
+            },
+            "21": {
+                "name_sol": "\u2705Short || C++ || Java || PYTHON || JS || Explained Solution\u2714\ufe0f || Beginner Friendly ||\ud83d\udd25",
+                "link_sol": "/problems/two-sum/solutions/3070799/short-c-java-python-js-explained-solution-beginner-friendly/",
+                "user_name": "amoddeshmukh844",
+                "date_sol": "Jan 18, 2023"
+            },
+            "22": {
+                "name_sol": "Solution  - C++/Java/Python  (Both Brute force & Optimized Code)",
+                "link_sol": "/problems/two-sum/solutions/2990807/solution-c-java-python-both-brute-force-optimized-code/",
+                "user_name": "arajAnkit",
+                "date_sol": "Jan 02, 2023"
+            },
+            "23": {
+                "name_sol": "Java 100% runtime || Easy to Understand",
+                "link_sol": "/problems/two-sum/solutions/2671539/java-100-runtime-easy-to-understand/",
+                "user_name": "vishaal351",
+                "date_sol": "Oct 07, 2022"
+            },
+            "24": {
+                "name_sol": "C++ one-pass",
+                "link_sol": "/problems/two-sum/solutions/674/c-one-pass/",
+                "user_name": "jianchao-li",
+                "date_sol": "Jun 08, 2015"
+            },
+            "25": {
+                "name_sol": "[C++/Java/Python] HashMap, Two pointers Solutions - Clean & Concise",
+                "link_sol": "/problems/two-sum/solutions/1378064/c-java-python-hashmap-two-pointers-solutions-clean-concise/",
+                "user_name": "hiepit",
+                "date_sol": "Aug 02, 2021"
+            },
+            "26": {
+                "name_sol": "Easy C++ solution||Using Three Different Appraoches",
+                "link_sol": "/problems/two-sum/solutions/1374512/easy-c-solution-using-three-different-appraoches/",
+                "user_name": "anubhavbaner7",
+                "date_sol": "Jul 31, 2021"
+            },
+            "27": {
+                "name_sol": "JavaScript Solution",
+                "link_sol": "/problems/two-sum/solutions/173262/javascript-solution/",
+                "user_name": "jeantimex",
+                "date_sol": "Sep 22, 2018"
+            },
+            "28": {
+                "name_sol": "[Neat] JavaScript Map, O(n)",
+                "link_sol": "/problems/two-sum/solutions/234005/neat-javascript-map-o-n/",
+                "user_name": "haleyysz",
+                "date_sol": "Feb 08, 2019"
+            },
+            "29": {
+                "name_sol": "Very short and simple Java code for Two Sum",
+                "link_sol": "/problems/two-sum/solutions/141/very-short-and-simple-java-code-for-two-sum/",
+                "user_name": "oKephart",
+                "date_sol": "Dec 23, 2014"
+            },
+            "30": {
+                "name_sol": "[C/C++/Python] Various solutions. c++ is O(n) time and just 6 lines. C hashmap solution",
+                "link_sol": "/problems/two-sum/solutions/189807/c-c-python-various-solutions-c-is-o-n-time-and-just-6-lines-c-hashmap-solution/",
+                "user_name": "ChrisTrompf",
+                "date_sol": "Nov 04, 2018"
+            }
         }
     }
 }

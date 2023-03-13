@@ -1,5 +1,6 @@
 import json
 from get_editorial import get_data_editorial
+from get_solutions import get_data_solutions_page
 
 
 def open_json(name):
@@ -35,16 +36,15 @@ def main():
         res_data[task]["editorial"] = data_editorial["editorial solution"]
 
         if res_data[task]["status_prem"]:
-            data_solutions = get_data_solutions(res_data[task]["link"])
-
+            res_data[task]["solutions"] = None
+        else:
+            data_solutions = get_data_solutions_page(res_data[task]["link"])
+            res_data[task]["solutions"] = data_solutions
 
         # write data
         with open("total.json", "a") as file:
             json.dump(res_data, file, indent=4)
 
-
-
-        print(res_data)
 
 
 if __name__ == "__main__":
